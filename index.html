@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>iiya Apps – Younes WALI ALAMI</title>
+  <title>iiya – Apps iOS par Younes WALI ALAMI</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
@@ -39,10 +39,13 @@
     .wrap{max-width:980px;margin:auto;padding:28px 20px}
 
     /* header / hero */
-    header{display:flex; align-items:center; gap:14px; margin:8px 0 24px}
-    .logo{width:44px;height:44px;border-radius:12px;background:var(--brand);
-      display:grid;place-items:center;color:#fff;font-weight:800;letter-spacing:.5px}
-    h1{font-size:32px; line-height:1.2; margin:0}
+    header{margin:8px 0 24px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{
+      width:44px; height:44px; border-radius:12px; background:var(--brand);
+      display:grid; place-items:center; color:#fff; font-weight:800; letter-spacing:.5px
+    }
+    .site-title{font-size:32px; margin:0}
     p.lead{margin:.35rem 0 1.5rem; color:var(--muted); font-size:17px}
 
     /* grid & cards */
@@ -85,62 +88,62 @@
   <div class="wrap">
 
     <header>
-      <div class="logo">iiya</div>
-      <div>
-        <h1>iiya Apps</h1>
-        <p class="lead">Des apps iOS simples et utiles, développées à titre personnel.</p>
+      <div class="brand">
+        <div class="logo" aria-label="iiya">iiya</div>
+        <h1 class="site-title">Apps</h1>
       </div>
+      <p class="lead">Des apps iOS simples et utiles, développées à titre personnel.</p>
     </header>
 
     <section class="grid">
 
-<!-- Convertisseur de Poche -->
-<article class="card">
-  <div class="icon">
-    <img src="/assets/convertisseur.png" alt="Convertisseur de Poche">
-  </div>
-  <div class="meta">
-    <h2 class="title">Convertisseur de Poche</h2>
-    <p class="desc">
-      L’outil indispensable pour convertir facilement toutes vos unités, devises, tailles et plus encore. 
-      Une app claire, rapide et universelle, conçue pour vous accompagner partout, même hors connexion.
-    </p>
-    <div class="tags">
-      <span class="tag">Gratuit</span>
-      <span class="tag">iPhone</span>
-      <span class="tag">Conversions</span>
-    </div>
-    <div class="actions">
-      <a class="btn primary" href="https://apps.apple.com/fr/app/convertisseur-de-poche/id6749811427" target="_blank" rel="noopener">Télécharger sur l’App Store</a>
-      <a class="btn" href="mailto:support.app@iiya.fr">Support</a>
-    </div>
-    <p class="small" style="margin-top:8px">Publicités gérées via Google AdMob (respect du consentement). Version Premium disponible pour retirer la pub.</p>
-  </div>
-</article>
+      <!-- Convertisseur de Poche -->
+      <article class="card">
+        <div class="icon">
+          <img src="/assets/convertisseur.png" alt="Convertisseur de Poche">
+        </div>
+        <div class="meta">
+          <h2 class="title">Convertisseur de Poche</h2>
+          <p class="desc">
+            L’outil indispensable pour convertir facilement toutes vos unités, devises, tailles et plus encore. 
+            Une app claire, rapide et universelle, conçue pour vous accompagner partout, même hors connexion.
+          </p>
+          <div class="tags">
+            <span class="tag">Gratuit</span>
+            <span class="tag">iPhone</span>
+            <span class="tag">Conversions</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://apps.apple.com/fr/app/convertisseur-de-poche/id6749811427" target="_blank" rel="noopener">Télécharger sur l’App Store</a>
+            <a class="btn" href="mailto:support.app@iiya.fr">Support</a>
+          </div>
+          <p class="small" style="margin-top:8px">Publicités gérées via Google AdMob (respect du consentement). Version Premium disponible pour retirer la pub.</p>
+        </div>
+      </article>
 
-<!-- PanierMalin -->
-<article class="card">
-  <div class="icon">
-    <img src="/assets/paniermalin.png" alt="PanierMalin">
-  </div>
-  <div class="meta">
-    <h2 class="title">PanierMalin</h2>
-    <p class="desc">
-      Simplifiez vos courses avec une app pratique et moderne. 
-      Ajoutez vos produits en un instant, retrouvez vos favoris, organisez vos listes et gérez vos courses sans limite.
-    </p>
-    <div class="tags">
-      <span class="tag">Gratuit</span>
-      <span class="tag">iPhone</span>
-      <span class="tag">Courses</span>
-    </div>
-    <div class="actions">
-      <a class="btn primary" href="https://apps.apple.com/fr/app/paniermalin/id6749275940" target="_blank" rel="noopener">Télécharger sur l’App Store</a>
-      <a class="btn" href="mailto:support.app@iiya.fr">Support</a>
-    </div>
-    <p class="small" style="margin-top:8px">Publicités gérées via Google AdMob. Version Premium disponible pour retirer la pub.</p>
-  </div>
-</article>
+      <!-- PanierMalin -->
+      <article class="card">
+        <div class="icon">
+          <img src="/assets/paniermalin.png" alt="PanierMalin">
+        </div>
+        <div class="meta">
+          <h2 class="title">PanierMalin</h2>
+          <p class="desc">
+            Simplifiez vos courses avec une app pratique et moderne. 
+            Ajoutez vos produits en un instant, retrouvez vos favoris, organisez vos listes et gérez vos courses sans limite.
+          </p>
+          <div class="tags">
+            <span class="tag">Gratuit</span>
+            <span class="tag">iPhone</span>
+            <span class="tag">Courses</span>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://apps.apple.com/fr/app/paniermalin/id6749275940" target="_blank" rel="noopener">Télécharger sur l’App Store</a>
+            <a class="btn" href="mailto:support.app@iiya.fr">Support</a>
+          </div>
+          <p class="small" style="margin-top:8px">Publicités gérées via Google AdMob. Version Premium disponible pour retirer la pub.</p>
+        </div>
+      </article>
 
     </section>
 
