@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>iiya Apps – Apps iOS par Younes WALI ALAMI</title>
-    <!-- Favicon -->
+  <title>iiya Apps – Younes WALI ALAMI</title>
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
   <!-- Meta partage -->
   <meta name="description" content="Apps iOS simples et utiles : Convertisseur de Poche et PanierMalin. Téléchargement sur l’App Store et support." />
-  <meta property="og:title" content="iiya Apps – Apps iOS par Younes WALI ALAMI" />
+  <meta property="og:title" content="iiya Apps – Younes WALI ALAMI" />
   <meta property="og:description" content="Convertisseur de Poche et PanierMalin. Téléchargement sur l’App Store." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ads.iiya.fr/" />
@@ -18,41 +19,71 @@
 
   <style>
     :root{
-      --bg:#f7f7fb; --card:#fff; --text:#1b1b1f; --muted:#6b7280; --brand:#0a84ff; --hair:#e5e7eb;
+      --bg:#f7f7fb; --card:#fff; --text:#111318; --muted:#5f6570; --brand:#0a84ff; --hair:#e8eaf0;
+      --tag-bg:#f3f6ff;
     }
     @media (prefers-color-scheme: dark){
-      :root{ --bg:#0b0c0f; --card:#111318; --text:#e5e7eb; --muted:#9aa0a6; --brand:#0a84ff; --hair:#1f232b; }
+      :root{
+        --bg:#0b0d11; --card:#12151b; --text:#e8ebf0; --muted:#a3aab3; --brand:#4da3ff; --hair:#1d2330;
+        --tag-bg:#162032;
+      }
     }
     *{box-sizing:border-box}
-    body{margin:0;font:16px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,system-ui; background:var(--bg); color:var(--text);}
+    body{
+      margin:0; font:16px/1.55 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Inter,system-ui;
+      background:var(--bg); color:var(--text);
+    }
     a{color:var(--brand); text-decoration:none}
     a:hover{text-decoration:underline}
+
     .wrap{max-width:980px;margin:auto;padding:28px 20px}
-    header{display:flex;align-items:center;gap:14px;margin-bottom:18px}
-    .logo{width:40px;height:40px;border-radius:10px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:700}
-    h1{font-size:26px;margin:0}
-    p.lead{margin:.25rem 0 1.25rem;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-    @media (max-width:800px){ .grid{grid-template-columns:1fr} }
-    .card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:18px;display:flex;gap:16px;align-items:center}
-    .icon{width:84px;height:84px;border-radius:18px;background:#e9eefc;display:grid;place-items:center;font-size:38px;flex:0 0 auto;overflow:hidden}
-    .icon img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block}
-    .meta{flex:1 1 auto;min-width:0}
-    .title{font-size:20px;font-weight:700;margin:0 0 4px}
-    .desc{color:var(--muted);margin:0 0 10px}
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
-    .tag{font-size:12px;color:var(--muted);border:1px solid var(--hair);padding:4px 8px;border-radius:999px}
-    .actions{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--hair);background:var(--card);color:var(--text);padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600}
+
+    /* header / hero */
+    header{display:flex; align-items:center; gap:14px; margin:8px 0 24px}
+    .logo{width:44px;height:44px;border-radius:12px;background:var(--brand);
+      display:grid;place-items:center;color:#fff;font-weight:800;letter-spacing:.5px}
+    h1{font-size:32px; line-height:1.2; margin:0}
+    p.lead{margin:.35rem 0 1.5rem; color:var(--muted); font-size:17px}
+
+    /* grid & cards */
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    @media (max-width:860px){ .grid{grid-template-columns:1fr} }
+    .card{
+      background:var(--card); border:1px solid var(--hair); border-radius:18px; padding:18px;
+      display:flex; gap:16px; align-items:center;
+    }
+    .icon{
+      width:84px; height:84px; border-radius:18px; flex:0 0 auto; overflow:hidden;
+      background:#e9eefc;
+    }
+    .icon img{width:100%; height:100%; object-fit:cover; display:block}
+
+    .meta{flex:1 1 auto; min-width:0}
+    .title{font-size:20px; font-weight:750; margin:0 0 6px}
+    .desc{color:var(--muted); margin:0 0 12px}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 14px}
+    .tag{
+      font-size:12px; color:var(--muted); background:var(--tag-bg);
+      border:1px solid var(--hair); padding:4px 8px; border-radius:999px
+    }
+
+    .actions{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px; border:1px solid var(--hair);
+      background:var(--card); color:var(--text); padding:10px 14px; border-radius:12px;
+      text-decoration:none; font-weight:600
+    }
     .btn:hover{border-color:var(--brand)}
-    .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
-    footer{margin-top:28px;padding-top:18px;border-top:1px solid var(--hair);color:var(--muted);font-size:14px}
-    .small{font-size:13px;color:var(--muted)}
-    .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .btn.primary{background:var(--brand); border-color:var(--brand); color:#fff}
+
+    footer{margin-top:28px; padding-top:18px; border-top:1px solid var(--hair); color:var(--muted); font-size:14px}
+    .row{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    .small{font-size:13px; color:var(--muted)}
   </style>
 </head>
 <body>
   <div class="wrap">
+
     <header>
       <div class="logo">iiya</div>
       <div>
@@ -66,9 +97,7 @@
       <!-- Convertisseur de Poche -->
       <article class="card">
         <div class="icon">
-          <!-- Remplace l’emoji par une icône locale si tu veux : /assets/convertisseur.png -->
-          <!-- <img src="/assets/convertisseur.png" alt="Convertisseur de Poche"> -->
-          🔁
+          <img src="/assets/convertisseur.png" alt="Convertisseur de Poche">
         </div>
         <div class="meta">
           <h2 class="title">Convertisseur de Poche</h2>
@@ -82,16 +111,16 @@
             <a class="btn primary" href="https://apps.apple.com/fr/app/convertisseur-de-poche/id6749811427" target="_blank" rel="noopener">Télécharger sur l’App Store</a>
             <a class="btn" href="mailto:support.app@iiya.fr">Support</a>
           </div>
-          <p class="small" style="margin-top:8px">Publicités gérées via Google AdMob (respect du consentement). Version Premium disponible pour retirer la pub.</p>
+          <p class="small" style="margin-top:10px">
+            Publicités gérées via Google AdMob (respect du consentement). Version Premium disponible pour retirer la pub.
+          </p>
         </div>
       </article>
 
       <!-- PanierMalin -->
       <article class="card">
         <div class="icon">
-          <!-- Remplace par /assets/paniermalin.png si disponible -->
-          <!-- <img src="/assets/paniermalin.png" alt="PanierMalin"> -->
-          🧺
+          <img src="/assets/paniermalin.png" alt="PanierMalin">
         </div>
         <div class="meta">
           <h2 class="title">PanierMalin</h2>
@@ -116,7 +145,9 @@
         <span>•</span>
         <a href="mailto:support.app@iiya.fr">support.app@iiya.fr</a>
         <span>•</span>
-        <a href="https://rhetorical-poultry-b18.notion.site/Politique-de-confidentialit-253dd156a15e80e6a8e2ecb7d61f7394" target="_blank" rel="noopener">Politique de confidentialité</a>
+        <a href="https://rhetorical-poultry-b18.notion.site/Politique-de-confidentialit-253dd156a15e80e6a8e2ecb7d61f7394" target="_blank" rel="noopener">
+          Politique de confidentialité
+        </a>
       </div>
     </footer>
   </div>
